@@ -45,7 +45,7 @@ async def play(ctx,url):
 
 async def on_audio_end(ctx):
    # if error:
-    #    print('audio error:', error)
+    #    print('audio error:', error) n
 
     # check if there are queued songs
     if not queued_songs:
