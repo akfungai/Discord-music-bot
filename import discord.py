@@ -18,6 +18,10 @@ queued_songs = []
 
 ffmpeg_path = r'C:\Users\akoma\Downloads\ffmpeg-2023-06-08-git-024c30aa3b-full_build\bin\ffmpeg.exe'
 
+with open('mytoken', 'r') as file:
+    TOKEN = file.read()
+
+# Use the file_contents variable in your code
 
 
 @bot.command()
@@ -125,5 +129,5 @@ async def skip(ctx):
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
 
-bot.run('MTExNzE5NDM0Mjk5MDM0ODMxOQ.GyWWxr.61xCAIhkC_-BNgrKCAQpvP3CgdkkFuOpAloxM4')  # Replace with your bot's token
+bot.run(TOKEN)  # Replace with your bot's token
 
